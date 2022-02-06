@@ -1,4 +1,66 @@
-body{
-    background-color: #242635;
-    font-family: 'Montserrat', sans-serif;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #03051c;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #03051c;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    padding: 3em;
+}
+.brand{
+    margin-top: -7;
+    transform: translateY(25%);
+}
+.brand h1{
+    font-size: 100px;
+}
+.brand span{
+    color: rgb(19, 124, 89);
+    font-size: 150px;
+
+}
+.brand h2{
+    font-size: 50px;
+    transform: translateY(20%);
+}
+.h2 span{
+   display: flex;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+}
+.menu .active{
+    color: rgb(19, 124, 89);
+}
+.menu a:hover{
+    background-color: rgb(19, 124, 89);
+    color: #03051c;
+    transition: ease-in .2s;
+}
     
