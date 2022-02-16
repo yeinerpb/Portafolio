@@ -20,26 +20,18 @@ body {
 .navbar{
     display: flex;
     justify-content:space-between;
-    padding: 3em;
-}
-.brand{
-    margin-top: -7;
-    transform: translateY(25%);
+    padding: 1.5rem;
+    margin-left: 30%;
+    margin-right: 3rem;
 }
 .brand h1{
     font-size: 100px;
+    margin-top: 4rem;
+    margin-left: 3rem;
 }
 .brand span{
     color: rgb(19, 124, 89);
     font-size: 150px;
-
-}
-.brand h2{
-    font-size: 50px;
-    transform: translateY(20%);
-}
-.h2 span{
-   display: flex;
 }
 .menu{
     display: flex;
@@ -48,8 +40,8 @@ body {
 }
 .menu li{
     list-style: none;
+    
 }
-
 .menu a{
     color: white;
     text-decoration: none;
@@ -63,4 +55,23 @@ body {
     color: #03051c;
     transition: ease-in .2s;
 }
-    
+.info-content {
+    color: white;
+    width:20%;
+    margin-top: 0;
+    margin-left: 3rem;
+    font-size: 15px;
+} 
+.photo img{
+    height: 33rem;
+    width: auto;
+    margin-left: 38%;
+    margin-top: -25%;
+}
+.exp {
+    margin-left: 65%;
+    margin-top: -40%;
+}
+.exp span{
+    color: rgb(19, 124, 89);
+    font-size: 50px;
