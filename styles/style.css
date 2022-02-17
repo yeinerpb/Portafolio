@@ -74,4 +74,46 @@ body {
 }
 .exp span{
     color: rgb(19, 124, 89);
+    font-size: 40px;
+}
+.exp button{
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.rectangle {
+   margin-left: auto;
+   margin-right: auto;
+   width: 50rem;
+   height: 9rem;
+   background-color: rgb(59, 57, 57);
+   border-radius: 15px;
+   text-align: center;
+}
+.card button{
+    width: 9rem;
+    height: 5rem;
+    border-radius: 8px;
+    margin: 4%;
+    cursor: pointer;
+}
+.article img{
+    width: 4rem;
+    height: auto;
+}
+.acerca{
+    text-align: center;
+
+}
+.acerca h2{
+    color:rgb(19, 124, 89);
     font-size: 50px;
+    margin-top: 6rem;
+}
+.acerca p{
+    color: white;
+    font-size: 30px;
+    margin: 3rem ;
+}
