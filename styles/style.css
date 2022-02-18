@@ -8,7 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #03051c;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 .wrapper{
@@ -116,4 +116,55 @@ body {
     color: white;
     font-size: 30px;
     margin: 3rem ;
+}
+.servicios button{
+    width: 15rem;
+    height: 24rem;
+    margin: 3rem;
+    cursor: pointer;
+
+}
+.servicios p{
+    color: black;
+    font-size: 10px;
+}
+.habilidades p{
+    font-size: 15px;
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+.habilidades .web{
+    width: 40%;
+}
+.habilidades .desing{
+    width: 44%;
+}
+.habilidades .ux{
+    width: 35%;
+}
+progress[value] {
+    width: 50rem;
+    height: 3rem;
+  }
+.portafolios img{
+    margin-top: 3rem;
+    width: 30rem;
+    height: auto;
+    margin: 3rem;
+}
+.contacto button{
+    width: 15rem;
+    height: 15rem;
+    margin: 3rem;
+    cursor: pointer;
+}
+.footer{
+    background-color: rgb(59, 57, 57);;
+    height: 7rem;
+    color: rgb(19, 124, 89);
+}
+.footer h2{
+    float: none !important;
+    text-align: center;
+    font-size: 20px;
 }
