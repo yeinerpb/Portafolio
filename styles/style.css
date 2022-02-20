@@ -1,51 +1,57 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #03051c;
-    /*overflow-x: hidden;*/
 }
 
 .wrapper{
-    width: 100vw;
-    height: 100vh;
-    background-color: #03051c;
-    color: white;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0 0.5rem;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+
+input#menu-hamburguesa~ul{
+    background-color: rgb(59, 57, 57);
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: 100% ;
+    transition: all 300ms linear;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    right: 0;
+
 }
 .navbar{
-    display: flex;
-    justify-content:space-between;
-    padding: 1.5rem;
-    margin-left: 30%;
-    margin-right: 3rem;
-}
-.brand h1{
-    font-size: 100px;
-    margin-top: 4rem;
-    margin-left: 3rem;
-}
-.brand span{
-    color: rgb(19, 124, 89);
-    font-size: 150px;
-}
-.menu{
-    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
     width: 100%;
-    justify-content: space-around;
+    text-align: right;
 }
-.menu li{
-    list-style: none;
+.navbar img{
+    cursor: pointer;
     
 }
 .menu a{
     color: white;
     text-decoration: none;
-    padding: 8px 20px;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+.menu li{
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 .menu .active{
     color: rgb(19, 124, 89);
@@ -55,26 +61,225 @@ body {
     color: #03051c;
     transition: ease-in .2s;
 }
+
 .info-content {
+    display: flex;
     color: white;
-    width:20%;
-    margin-top: 0;
-    margin-left: 3rem;
-    font-size: 15px;
-} 
+}
+.brand{ 
+    margin-bottom: 3rem;
+}
+.main h1{
+    font-size: 20px;
+    color: white;
+}
+
+.brand span{
+    color: rgb(19, 124, 89);
+    font-size: 30px;
+}
+.main h2{
+    font-size: 10px;
+}
 .photo img{
-    height: 33rem;
-    width: auto;
-    margin-left: 38%;
-    margin-top: -25%;
+    width: 12rem;
+    height: auto;
+    display: inline-block
+}.exp {
+    width: 100% ;
+    font-size: 30px;
+    
+}
+.exp span{
+    color: rgb(19, 124, 89);   
+}
+.exp button{
+    width: 20px;
+    height: auto;
+    border-radius: 100%;
+    cursor: pointer;
+    border: none;
+
+}
+.exp svg{
+    width: 10px;
+    height: auto;
+}
+.article{
+    text-align: center;
+}
+.rectangle{
+    background-color:rgb(59, 57, 57);
+    border-radius: 10px;
+    width: 100%;
+    height: 7rem;
+   
+}
+.card button{
+    width: 25%;
+    height: 4rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+.card img{
+    width: 2rem;
+    height: 2rem;
+}
+.acerca h2{
+    color: rgb(19, 124, 89);
+    font-size: 30px;
+    margin: 1.5rem;
+}
+.acerca p{
+    color: white;
+
+}
+.servicios{
+    display: flex;
+}
+.servicios button{
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    margin: .3rem;
+    cursor: pointer;
+}
+.servicios svg{
+    width: 3rem;
+    height: 4.5rem;
+}
+.servicios p{
+    color: rgb(59, 57, 57);
+    font-size: 10px;
+}
+
+progress[value] {
+    width: 100%;
+    height: 2rem;
+}
+.habilidades p{
+    text-align: left;
+    margin-top: 1.5rem;
+}
+.portafolios h2{
+    font-size: 30px;
+}
+.portafolios{
+    width: 100%;
+    height: auto;
+}
+.portafolios img{
+    width: 48%;
+    display: inline-block;
+}
+.phone{
+    display: flex;
+}
+.contacto button{
+    width: 80%;
+    height: 12rem;
+    cursor: pointer;
+}
+.contacto h4{
+    font-size: 11px;
+}
+.footer{
+    background-color: rgb(59, 57, 57);
+}
+.footer h2{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and ( min-width:640px ) {
+label{
+    display: none;
+}
+.wrapper{
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: #03051c;
+    color: white;
+}
+input#menu-hamburguesa~ul{
+     position: static;
+    background-color: transparent;
+    display: flex; 
+
+}
+input#menu-hamburguesa~ul>li{
+    padding: 0 1rem;
+}
+.active{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 20px;
+}
+.menu .active{
+    color: rgb(19, 124, 89);
+}
+.menu a:hover{
+    background-color: rgb(19, 124, 89);
+    color: #03051c;
+    transition: ease-in .2s;
+
+}
+.info-content {
+    display: flex;
+    color: white;
+}
+.brand{ 
+    margin-bottom: 3rem;
+
+}
+.brand h1{
+    font-size: 100px;
+}
+.brand span{
+    color: rgb(19, 124, 89);
+    font-size: 150px;
+}
+.brand h2{
+    font-size: 50px;
 }
 .exp {
-    margin-left: 65%;
-    margin-top: -40%;
+    margin-left:0 ;
+    margin-top:0 ;
+    font-size: 50px;
 }
 .exp span{
     color: rgb(19, 124, 89);
-    font-size: 40px;
+    
+}
+.exp h2{
+    font-size: 50px;
+}
+.photo img{
+    width: 27rem;
+    height: auto ;
 }
 .exp button{
     width: 40px;
@@ -82,6 +287,11 @@ body {
     margin: 3px;
     border-radius: 100%;
     cursor: pointer;
+    border: none;
+}
+.exp svg{
+    width: 1.5rem;
+    height: auto;
 }
 .rectangle {
    margin-left: auto;
@@ -118,18 +328,21 @@ body {
     margin: 3rem ;
 }
 .servicios button{
-    width: 15rem;
+    width: 80%;
     height: 24rem;
     margin: 3rem;
     cursor: pointer;
-
 }
 .servicios p{
-    color: black;
-    font-size: 10px;
+    color: rgb(59, 57, 57);
+    font-size: 20px;
+}
+.servicios svg{
+    width: 8rem;
+    height: auto;
 }
 .habilidades p{
-    font-size: 15px;
+    font-size: 30px;
     margin-top: 4rem;
     margin-bottom: 0;
 }
@@ -142,29 +355,44 @@ body {
 .habilidades .ux{
     width: 35%;
 }
-progress[value] {
-    width: 50rem;
-    height: 3rem;
-  }
+.progress[value] {
+    width: 90%;
+    height: 10rem;
+}
+.habilidades progress{
+    width: 95%;
+    height: 4rem;
+}
 .portafolios img{
     margin-top: 3rem;
     width: 30rem;
     height: auto;
     margin: 3rem;
-}
-.contacto button{
-    width: 15rem;
-    height: 15rem;
-    margin: 3rem;
     cursor: pointer;
 }
+.contacto button{
+    width: 80%;
+    height: 25rem;
+    margin: 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+.contacto h3{
+    font-size: 20px;
+}
+.contacto h4{
+    font-size: 20px;
+    color: rgb(59, 57, 57);
+}
 .footer{
-    background-color: rgb(59, 57, 57);;
+    background-color: rgb(59, 57, 57);
     height: 7rem;
     color: rgb(19, 124, 89);
 }
 .footer h2{
-    float: none !important;
-    text-align: center;
+    margin-top: 1rem;
+    align-items: center;
     font-size: 20px;
+}
 }
